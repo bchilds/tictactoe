@@ -9,7 +9,13 @@ class Piece {
 	}
 
 	place(char) {
-		this.piece = char
+		if(this.piece === '.') {
+			this.piece = char
+			return true
+		} else {
+			console.log('Invalid play!!')
+			return false
+		}
 	}
 
 
